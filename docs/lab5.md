@@ -100,5 +100,5 @@ ENTRYPOINT ["lab5", "first", "secOnd", "thirdarg"]
 
 ### Скриншот
 
-![Screenshot](balberinlabs5.png)
+![Screenshot](balberinlabs5.PNG)
 

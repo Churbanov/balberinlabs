@@ -156,5 +156,5 @@ CMD lab4
 
 ### Скриншот
 
-![Screenshot](balberinlabs.png)
+![Screenshot](balberinlabs.PNG)
 

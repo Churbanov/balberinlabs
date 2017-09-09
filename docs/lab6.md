@@ -358,7 +358,7 @@ ENTRYPOINT ["start.sh"]
 
 ### Скриншот
 
-![Screenshot](balberinlabs5-1.png)
+![Screenshot](balberinlabs5-1.PNG)
 
 ![Screenshot 2](nbnn2.PNG)
 
