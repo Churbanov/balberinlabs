@@ -360,7 +360,7 @@ ENTRYPOINT ["start.sh"]
 
 ![Screenshot](balberinlabs5-1.png)
 
-![Screenshot 2](nbnn 2.PNG)
+![Screenshot 2](nbnn2.PNG)
 
 #### Вывод терминала
 
