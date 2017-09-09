@@ -365,8 +365,8 @@ ENTRYPOINT ["start.sh"]
 #### Вывод терминала
 
 ```
-┌[bloodyfoxy☮BloodyFoxy-MBP.bloodyfo.xyz]-(~)
-└> docker run --rm bloodyfoxy/balblabs:lab6
+aachu@DESKTOP-BDA5DJP MINGW64 ~
+$ docker run --rm aachurbanov/balberinlabs:lab6
 Wait for 60 seconds
 Created shared memory object /shmjeshu
 Shared memory segment allocated correctly (8 bytes).

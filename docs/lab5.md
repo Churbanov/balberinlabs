@@ -16,17 +16,17 @@
 
 ```
 cd lab5
-docker build -t balblabs:lab5 .
+docker build -t balberinlabs:lab5 .
 ```
 #### Запуск
-`docker  run --rm balblabs:lab5`
+`docker  run --rm balberinlabs:lab5`
 
 
 ### Готовый образ
 
 ```
-docker pull bloodyfoxy/balblabs:lab5
-docker run --rm bloodyfoxy/balblabs:lab5
+docker pull aachurbanov/balberinlabs:lab5
+docker run --rm aachurbanov/balberinlabs:lab5
 ```
 
 ### Исходные файлы
@@ -55,23 +55,9 @@ int main(int argc, const char * argv[], const char *envp[])
         strcat(data, "\n");
         
     }
-        //файловые дескрипторы
-    int filedesc = open("lab5.txt", O_CREAT | O_TRUNC | O_WRONLY, S_IRUSR | S_IXUSR | S_IWUSR | S_IRGRP | S_IXGRP | S_IXOTH);
-    write(filedesc, data, strlen(data));
-    close(filedesc);
+    printf("%s",data);
     
 }
-```
-
-#### start.sh
-
-```
-#!/bin/bash
-# Посылаем аргументы
-lab5 First 2nd tHiRd arg kek lol thats boring
-ls -l -h
-cat lab5.txt
-
 ```
 
 #### Makefile
@@ -107,17 +93,12 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	libc6-dev clang coreutils binutils gcc make \
 	&& rm -rf /var/lib/apt/lists/*
 ADD ./src/* ./
-RUN cp start.sh /usr/local/bin/start.sh
-RUN chmod 755 /usr/local/bin/start.sh
 RUN make all
 RUN make install
-ENTRYPOINT ["start.sh"]
+ENTRYPOINT ["lab5", "first", "secOnd", "thirdarg"]
 ```
 
 ### Скриншот
 
-![Screenshot](5.png)
+![Screenshot](balberinlabs5.png)
 
-### asciinema запись
-
-[![asciicast](https://asciinema.org/a/ee939gonygrifwqwf7r2zyqud.png)](https://asciinema.org/a/ee939gonygrifwqwf7r2zyqud)
