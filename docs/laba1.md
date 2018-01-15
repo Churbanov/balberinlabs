@@ -12,7 +12,7 @@
 
 ​	Продемонстрируем выполнение этой команды:
 
-![crcont1](C:\Users\aachu\OneDrive\Документы\GitHub\labki\crcont1.PNG)
+![crcont1](crcont1.PNG)
 
 ​	После заходим в контейнер 1, набрав следующую команду:
 
