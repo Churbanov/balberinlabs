@@ -20,7 +20,7 @@
 
 ​	Посмотрим IP адрес машины "manager" с помощью команды:
 
-![laba2_5](C:\Users\aachu\OneDrive\Документы\GitHub\labki\laba2_5.PNG)
+![laba2_5](laba2_5.PNG)
 
 ​	Подключимся к машине "manager":
 
@@ -30,7 +30,7 @@
 
 `$ docker swarm init --advertise-addr 192.168.99.108:2377`
 
-![laba2_6](C:\Users\aachu\OneDrive\Документы\GitHub\labki\laba2_6.PNG)
+![laba2_6](laba2_6.PNG)
 
 Выполним в node1 и node2 предложенную команду:
 
@@ -39,7 +39,7 @@ $ docker-machine ssh node1
 docker@node1:~$ docker swarm join --token SWMTKN-1-2jqm3wwqneualaj0e45c3mkzftcyxoaw3uuw5tc6i28h2g3j3v-3jl4e2gzo9k1nr5ix6ay9k2ye 192.168.99.108:2377
 ```
 
-![laba2_7](C:\Users\aachu\OneDrive\Документы\GitHub\labki\laba2_7.PNG)
+![laba2_7](laba2_7.PNG)
 
 ​	Аналогично для node2:
 
@@ -48,7 +48,7 @@ $ docker-machine ssh node2
 docker@node1:~$ docker swarm join --token SWMTKN-1-2jqm3wwqneualaj0e45c3mkzftcyxoaw3uuw5tc6i28h2g3j3v-3jl4e2gzo9k1nr5ix6ay9k2ye 192.168.99.108:2377
 ```
 
-![laba2_8](C:\Users\aachu\OneDrive\Документы\GitHub\labki\laba2_8.PNG)
+![laba2_8](laba2_8.PNG)
 
 ​	Теперь мы получили рой состоящий из трех узлов который обладает масштабируемостью, и высокой доступностью. Посмотрим информацию о нем при помощи команды:
 
