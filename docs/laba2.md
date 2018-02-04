@@ -16,7 +16,7 @@
 
       `$ docker-machine ls`
 
-![laba2_4](C:\Users\aachu\OneDrive\Документы\GitHub\labki\laba2_4.PNG)
+![laba2_4](laba2_4.PNG)
 
 ​	Посмотрим IP адрес машины "manager" с помощью команды:
 
